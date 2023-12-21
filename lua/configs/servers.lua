@@ -13,7 +13,6 @@ local servers = {
 	["ocamllsp"] = {},
 	["clangd"] = {},
 	["zls"] = {},
-	["rnix"] = {},
 }
 local servers_list = {}
 
