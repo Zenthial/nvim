@@ -10,7 +10,10 @@ local servers = {
 		},
 	},
 	["rust_analyzer"] = {},
-	["ocamllsp"] = {}
+	["ocamllsp"] = {},
+	["clangd"] = {},
+	["zls"] = {},
+	["rnix"] = {},
 }
 local servers_list = {}
 
