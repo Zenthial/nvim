@@ -13,11 +13,6 @@ return function()
 		local cmp_action = lsp_zero.cmp_action()
 
 		cmp.setup {
-			--[[ snippet = {
-          expand = function(args)
-            luasnip.lsp_expand(args.body)
-          end,
-        }, --]]
 			formatting = lsp_zero.cmp_format(),
 			mapping = cmp.mapping.preset.insert({
 				['<C-Space>'] = cmp.mapping.complete(),

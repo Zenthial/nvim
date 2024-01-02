@@ -5,6 +5,13 @@ return {
     -- Git related plugins
     'tpope/vim-fugitive',
     'tpope/vim-rhubarb',
+    -- {
+    --     'andweeb/presence.nvim',
+    --     config = function()
+    --         require("presence").setup({})
+    --     end,
+    --     lazy = true
+    -- },
 
     -- Detect tabstop and shiftwidth automatically
     'tpope/vim-sleuth',
@@ -28,4 +35,13 @@ return {
 
     -- "gc" to comment visual regions/lines
     { 'numToStr/Comment.nvim', opts = {}, lazy = false },
+
+    { 'andweeb/presence.nvim', opts = {}, lazy = false },
+
+    {
+        'stevearc/oil.nvim',
+        opts = {},
+        -- Optional dependencies
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
 }

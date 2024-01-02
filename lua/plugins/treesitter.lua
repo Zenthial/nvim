@@ -5,6 +5,9 @@ return {
         dependencies = {
             'nvim-treesitter/nvim-treesitter-textobjects',
         },
+        setup = {
+            ident = { enable = true },
+        },
         build = ':TSUpdate',
     },
 }

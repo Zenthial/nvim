@@ -15,7 +15,6 @@ return {
       'folke/neodev.nvim',
     },
     config = function()
-      -- This is where all the LSP shenanigans will live
       local lsp_zero = require('lsp-zero')
       lsp_zero.extend_lspconfig()
 

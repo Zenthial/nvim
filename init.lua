@@ -40,6 +40,10 @@ vim.o.expandtab = true
 vim.o.shiftwidth = 4
 vim.o.tabstop = 4
 
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldlevel = 99
+
 -- Enable mouse mode
 vim.o.mouse = 'a'
 
@@ -253,3 +257,5 @@ require('which-key').register {
 
 -- Setup neovim lua configuration
 require('neodev').setup()
+require('oil').setup({ use_default_keymaps = true })
+require('presence'):setup({ auto_update = true })
