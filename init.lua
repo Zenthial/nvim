@@ -232,15 +232,6 @@ vim.defer_fn(function()
           ['[]'] = '@class.outer',
         },
       },
-      -- swap = {
-      --   enable = true,
-      --   swap_next = {
-      --     ['<leader>a'] = '@parameter.inner',
-      --   },
-      --   swap_previous = {
-      --     ['<leader>A'] = '@parameter.inner',
-      --   },
-      -- },
     },
   }
 end, 0)
@@ -256,7 +247,10 @@ require('which-key').register {
   ['<leader>w'] = { name = '[W]orkspace', _ = 'which_key_ignore' },
 }
 
+-- format on save
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
+
 -- Setup neovim lua configuration
 require('neodev').setup()
 require('oil').setup({ use_default_keymaps = true })
-require('presence'):setup({ auto_update = true })
+require('presence').setup({ auto_update = true })

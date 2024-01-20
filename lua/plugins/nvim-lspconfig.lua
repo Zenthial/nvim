@@ -15,9 +15,6 @@ return {
       'folke/neodev.nvim',
     },
     config = function()
-      local lsp_zero = require('lsp-zero')
-      lsp_zero.extend_lspconfig()
-
       local lspconfig = require('lspconfig')
       for server, config in pairs(servers) do
         lspconfig[server].setup(config)
