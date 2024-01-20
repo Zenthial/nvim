@@ -13,6 +13,8 @@ return {
     --     lazy = true
     -- },
 
+    "lopi-py/luau-lsp.nvim",
+
     -- Detect tabstop and shiftwidth automatically
     'tpope/vim-sleuth',
 

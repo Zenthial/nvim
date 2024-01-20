@@ -9,10 +9,13 @@ local servers = {
 			},
 		},
 	},
+	["luau_lsp"] = {},
 	["rust_analyzer"] = {},
 	["ocamllsp"] = {},
 	["clangd"] = {},
 	["zls"] = {},
+	["csharp_ls"] = {},
+	-- ["omnisharp"] = {},
 }
 local servers_list = {}
 

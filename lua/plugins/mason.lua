@@ -15,8 +15,23 @@ return {
                 table.insert(servers_arr, server)
             end
 
-            require("mason-lspconfig").setup {
+            local mason_lspconfig = require("mason-lspconfig")
+            mason_lspconfig.setup {
                 ensure_installed = servers_arr
+            }
+
+            mason_lspconfig.setup_handlers {
+                luau_lsp = function()
+                    require("luau-lsp").setup {
+                        sourcemap = {
+                            enable = true, -- enable sourcemap generation
+                            autogenerate = true,
+                        },
+                        types = {
+                            roblox = true, -- enable roblox api
+                        },
+                    }
+                end,
             }
         end,
     }
