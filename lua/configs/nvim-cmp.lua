@@ -5,9 +5,9 @@ return function()
         local cmp = require 'cmp'
         local cmp_select = { behavior = cmp.SelectBehavior.Select }
         local cmp_mappings = cmp.mapping.preset.insert({
-            ['<C-s>'] = cmp.mapping.select_prev_item(cmp_select),
-            ['<C-w>'] = cmp.mapping.select_next_item(cmp_select),
-            ['<C-d>'] = cmp.mapping.confirm({ select = true }),
+            ['<C-k>'] = cmp.mapping.select_prev_item(cmp_select),
+            ['<C-j>'] = cmp.mapping.select_next_item(cmp_select),
+            ['<C-l>'] = cmp.mapping.confirm({ select = true }),
             ["<C-Space>"] = cmp.mapping.complete(),
         })
 
