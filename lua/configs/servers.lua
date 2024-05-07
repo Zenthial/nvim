@@ -10,7 +10,7 @@ local servers = {
 		},
 	},
 	["luau_lsp"] = {},
-	["rust_analyzer"] = {},
+	-- ["rust_analyzer"] = {},
 	["ocamllsp"] = {},
 	["clangd"] = {},
 	["zls"] = {},

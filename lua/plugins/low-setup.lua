@@ -38,7 +38,7 @@ return {
     -- "gc" to comment visual regions/lines
     { 'numToStr/Comment.nvim', opts = {}, lazy = false },
 
-    { 'andweeb/presence.nvim', opts = {}, lazy = false },
+    -- { 'andweeb/presence.nvim', opts = {}, lazy = false },
 
     {
         'stevearc/oil.nvim',
@@ -46,4 +46,12 @@ return {
         -- Optional dependencies
         dependencies = { "nvim-tree/nvim-web-devicons" },
     },
+
+    -- 'simrat39/rust-tools.nvim'
+
+    {
+        'mrcjkb/rustaceanvim',
+        version = '^4', -- Recommended
+        lazy = false,   -- This plugin is already lazy
+    }
 }
