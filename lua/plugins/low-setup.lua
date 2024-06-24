@@ -5,6 +5,8 @@ return {
     -- Git related plugins
     'tpope/vim-fugitive',
     'tpope/vim-rhubarb',
+
+    'tpope/vim-surround',
     -- {
     --     'andweeb/presence.nvim',
     --     config = function()
@@ -14,6 +16,7 @@ return {
     -- },
 
     "lopi-py/luau-lsp.nvim",
+    "ckipp01/stylua-nvim",
 
     -- Detect tabstop and shiftwidth automatically
     'tpope/vim-sleuth',
@@ -47,7 +50,7 @@ return {
         dependencies = { "nvim-tree/nvim-web-devicons" },
     },
 
-    -- 'simrat39/rust-tools.nvim'
+    -- 'simrat39/rust-tools.nvim',
 
     {
         'mrcjkb/rustaceanvim',

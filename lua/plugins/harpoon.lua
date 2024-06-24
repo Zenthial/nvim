@@ -13,6 +13,7 @@ return {
             vim.keymap.set('n', '<leader>aj', function() ui.nav_file(3) end, { desc = "Harpoon File 3" })
             vim.keymap.set('n', '<leader>an', function() ui.nav_file(4) end, { desc = "Harpoon File 4" })
             vim.keymap.set('n', '<leader>am', function() ui.nav_file(5) end, { desc = "Harpoon File 5" })
+            vim.keymap.set('n', '<leader>ai', function() ui.nav_file(6) end, { desc = "Harpoon File 6" })
         end,
     }
 }

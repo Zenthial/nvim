@@ -31,7 +31,7 @@ return {
                             roblox = true, -- enable roblox api
                         },
                     }
-                end,
+                end
             }
         end,
     }
