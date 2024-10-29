@@ -14,7 +14,8 @@ local servers = {
 	["ocamllsp"] = {},
 	["clangd"] = {},
 	["zls"] = {},
-	["csharp_ls"] = {},
+	["hls"] = {},
+	["typst_lsp"] = {}
 	-- ["omnisharp"] = {},
 }
 local servers_list = {}
