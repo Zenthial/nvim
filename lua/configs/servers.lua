@@ -15,7 +15,7 @@ local servers = {
 	["clangd"] = {},
 	-- ["zls"] = {},
 	["hls"] = {},
-	["typst_lsp"] = {}
+	-- ["typst_lsp"] = {}
 	-- ["omnisharp"] = {},
 }
 local servers_list = {}

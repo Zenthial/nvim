@@ -23,6 +23,7 @@ return function()
 
             sources = {
                 { name = 'luasnip' },
+                -- { name = "supermaven" },
                 {
                     name = 'nvim_lsp',
                     -- entry_filter = function(entry, _)

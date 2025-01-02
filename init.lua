@@ -241,14 +241,17 @@ vim.defer_fn(function()
 end, 0)
 
 -- document existing key chains
-require('which-key').register {
-  ['<leader>c'] = { name = '[C]ode', _ = 'which_key_ignore' },
-  ['<leader>d'] = { name = '[D]ocument', _ = 'which_key_ignore' },
-  ['<leader>g'] = { name = '[G]it', _ = 'which_key_ignore' },
-  ['<leader>h'] = { name = 'More git', _ = 'which_key_ignore' },
-  ['<leader>r'] = { name = '[R]ename', _ = 'which_key_ignore' },
-  ['<leader>s'] = { name = '[S]earch', _ = 'which_key_ignore' },
-  ['<leader>w'] = { name = '[W]orkspace', _ = 'which_key_ignore' },
+local wk = require('which-key')
+wk.add {
+  { "<leader>c", group = "[C]ode" },
+  { "<leader>d", group = "[D]ocument" },
+  { "<leader>g", group = "[G]it" },
+  { "<leader>h", group = "More git" },
+  { "<leader>r", group = "[R]ename" },
+  { "<leader>s", group = "[S]earch" },
+  { "<leader>w", group = "[W]orkspace" },
+  { "<leader>a", group = "Harpoon" },
+  { "<leader>f", group = "[F]iles/[F]ind" }
 }
 
 -- format on save
@@ -257,4 +260,3 @@ vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
 -- Setup neovim lua configuration
 require('neodev').setup()
 require('oil').setup({ use_default_keymaps = true })
--- require('presence').setup({ auto_update = true })

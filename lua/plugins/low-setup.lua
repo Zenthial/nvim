@@ -14,6 +14,12 @@ return {
     --     end,
     --     lazy = true
     -- },
+    {
+        'vyfor/cord.nvim',
+        branch = 'client-server',
+        build = ':Cord fetch',
+        opts = {}, -- calls require('cord').setup()
+    },
 
     "lopi-py/luau-lsp.nvim",
     "ckipp01/stylua-nvim",
@@ -21,7 +27,7 @@ return {
     -- Detect tabstop and shiftwidth automatically
     'tpope/vim-sleuth',
 
-    { 'folke/which-key.nvim',  opts = {} },
+    { 'folke/which-key.nvim',  opts = {}, dependencies = { "echasnovski/mini.icons" } },
 
     {
         'windwp/nvim-autopairs',
@@ -56,5 +62,19 @@ return {
         'mrcjkb/rustaceanvim',
         version = '^4', -- Recommended
         lazy = false,   -- This plugin is already lazy
+    },
+
+    {
+        "kawre/leetcode.nvim",
+        build = ":TSUpdate html", -- if you have `nvim-treesitter` installed
+        dependencies = {
+            "nvim-telescope/telescope.nvim",
+            -- "ibhagwan/fzf-lua",
+            "nvim-lua/plenary.nvim",
+            "MunifTanjim/nui.nvim",
+        },
+        opts = {
+            lang = "cpp",
+        },
     }
 }

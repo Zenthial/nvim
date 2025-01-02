@@ -21,6 +21,10 @@ return {
         config["capabilities"] = capabilities
         lspconfig[server].setup(config)
       end
+
+      local opts = { noremap = true, silent = true }
+      vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
+      vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
     end
   }
 }
